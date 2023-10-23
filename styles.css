@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif; /* A whimsical and soft font, good for this theme */
+}
+
+body {
+  background: #fed6a5;
+  color: #e26c2e;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header, footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem 2rem;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+ul.nav {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding-left: 0;
+    align-items: center; 
+}
+
+ul.nav a {
+    text-decoration: none;
+    color: #5a4634;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+  &:hover {
+    color: #e26c2e;
+  }
+}
+
+/* This does it here baby!!! */
+a {
+    color: #5a4634;
+    display: flex;
+
+    &:hover {
+        color: #e26c2e;
+    }
+}
+
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px; 
+    border: 2px solid #cbab83; 
+    border-radius: 15px; 
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+    background-color: #b19573; 
+    color: white;
+    border: none;
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none; 
+    display: block;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.facts {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
