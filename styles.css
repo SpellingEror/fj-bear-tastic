@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Quicksand', sans-serif; /* A whimsical and soft font, good for this theme */
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -24,8 +24,6 @@ header, footer {
   max-width: 1200px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
-  line-height: 1.6;
 }
 
 ul.nav {
@@ -42,22 +40,16 @@ ul.nav a {
     padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-
-  &:hover {
-    color: #e26c2e;
-  }
 }
 
-/* This does it here baby!!! */
 a {
     color: #5a4634;
     display: flex;
-
-    &:hover {
-        color: #e26c2e;
-    }
 }
 
+a:hover {
+    color: #e26c2e;
+}
 
 .testimonial {
     background-color: rgba(255, 255, 255, 0.9);
@@ -67,30 +59,31 @@ a {
     max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-style: italic;
+    margin: 20px auto; 
 }
 
 .fab {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000; 
-    background-color: #b19573; 
+    z-index: 1000;
+    background-color: #b19573;
     color: white;
     border: none;
-    border-radius: 50%; 
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     text-align: center;
     line-height: 50px;
     font-size: 24px;
     cursor: pointer;
-    text-decoration: none; 
+    text-decoration: none;
     display: block;
 }
 
 .video-container {
     position: relative;
-    width: 100%; 
+    width: 100%;
     padding-bottom: 56.25%;
     overflow: hidden;
 }
@@ -106,5 +99,22 @@ a {
 .facts {
   display: flex;
   align-items: center; 
+  flex-wrap: wrap; 
   justify-content: space-between;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  ul.nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+
+  .testimonial {
+    max-width: 100%;
+  }
 }
